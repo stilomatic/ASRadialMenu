@@ -39,6 +39,7 @@
         scale = 0.01;
         
         UIButton *clearBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        clearBtn.AccessibilityLabel = @"closeMenu";
         CGFloat dimension = kASMAXRadius * 0.6;
         clearBtn.frame = CGRectMake((self.bounds.size.width - dimension) * 0.5, (self.bounds.size.height - dimension) * 0.5 ,dimension , dimension);
         [clearBtn addTarget:self action:@selector(closeHandler) forControlEvents:UIControlEventTouchUpInside];

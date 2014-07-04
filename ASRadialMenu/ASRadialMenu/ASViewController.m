@@ -92,6 +92,7 @@
     [circularBtn addTarget:self action:@selector(openRadialMenu) forControlEvents:UIControlEventTouchUpInside];
     circularBtn.layer.cornerRadius = 50.0;
     circularBtn.layer.masksToBounds = YES;
+    circularBtn.AccessibilityLabel = @"openMenu";
     [self.view addSubview:circularBtn];
     
 }
